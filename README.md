@@ -1,61 +1,62 @@
-# Отели
+# Hotels
 
-## Введение
-В этой задаче вы научитесь работать с моделями отношениями. Это классический подход реляционных БД, в котором связи имеют не меньшую ценность чам сама информация.  Мы будем учиться составлять отношения между моделями, делать ссылки на другие модели и писать методы.
+## Introduction
 
-Перед тем как приступить к выполнению релизов изучи эти темы в документации.
+In this assignment, you will learn how to work with model connections. In this classic relational database approach, connections are as valuable as the information itself. You will learn how to connect models, reference other models, and write methods.
 
-- [model]
-- [sequelize cli]
+Before starting your releases, carefully examine these topics in the documentation:
+- [Model]
+- [Sequelize cli]
 - [Associations]
 
 
 ![](hotels_schema.png)
 
-*Рисунок 1*. Дизайн схемы для этой задачи
+*Figure 1*. Schema design for this assignment
 
-Мы сосредоточимся на написании связей в этой задаче, но давайте представим, что мы создаем полноценное приложение, которое позволяет забронировать номера в отеле. Отели регистрируют свои номера на основе нашего бронирования, и после этого пользователи могут забронировать номера в отелях. Мы не будем беспокоиться о датах бронирования и других деталях, которые важны в реальном мире. Мы просто хотим сосредоточиться на том, как мы можем связывать наши модели друг с другом.
+You'll focus on connections, but imagine that you're building a complete application for booking hotel rooms. A room should know its Hotel, and Bookings should know its User and Room. Don't focus on booking dates or other unimportant details, but on correctly connecting the models.
 
-Когда наши связи будут написаны, то мы сможем ответить на следующие вопросы.
+After establishing the connections, you should be able to answer the following questions.
 
-*Для пользователя ...*
+*For a user...*
 
-1. Какие заказы были сделаны пользователем?
-2. Какие номера забронировал пользователь?
-3. В каких отелях пользователь забронировал номер?
+1. What did the user book?
+2. What rooms did the user book?
+3. In which hotels did the user book a room?
 
-*Для отеля ...*
+*For a hotel...*
 
-1. Какие номера имеются в отеле?
-2. Какие заказы были сделаны в отеле?
-3. Какие гости заказали номера в отеле?
+1. What rooms are available in the hotel?
+2. What bookings did the hotel receive?
+3. Which guests booked rooms at the hotel?
 
-*Для комнаты ...*
+*For a room...*
 
-1. В каком отеле находится номер?
-2. Какое бронирование этого номера было сделано?
+1. This room is from what hotel?
+2. Which booking booked this room?
 
-*Для бронирования ...*
+*For a booking...*
 
-1. Для какого гостя было сделано это бронирование?
-2. Какой номер был забронирован?
-3. В каком отеле было сделано бронирование?
+1. This booking is for which guest?
+2. The booking was for what room?
+3. The booking was for what hotel?
 
 ## Releases
 
-### Release 0: Создайте модели
-Вам предстоит создать все необходимые модели с помощью Sequelize CLI. Посмотрите на картинку, определите какие сущности у вас есть и создайте модель для каждой из них.
+### Release 0: Build Models
 
-В этой задаче вам помогут следующие страницы документации:
-- [model]
-- [sequelize cli]
+You'll create all required models using Sequelize CLI. Look at the image, determine what entities you need, and create a model for each.
+
+The following pages may be helpful:
+- [Model]
+- [Sequelize cli]
 
 
-### Release 1: Организуйте связи
-Следующим шагом нужно указать в моделях ссылки на другие модели. Чтобы понять, что нужно сделать, внимательно посмотрите на дизайн схемы, на ней указаны связи каждой модели. 
-Если вы можете ответить на все поставленные вопросы, то это означает, что наши связи построены правильно.
+### Release 1: Organize Connections
 
-В этой задаче вам помогут следующие страницы документации:
+Next, you need to establish connections by giving models links to other models. To better understand, take a close look at the above image. If you can answer all the questions, that means that you've correctly constructed your connections.
+
+The following pages may be helpful:
 - [Associations]
 - [Model Querying]
 
@@ -64,12 +65,12 @@
 Подумайте, как можно реорганизовать структуру вашей БД. Постарайтесь добиться того, чтобы для ответа на большинство вышеприведенных вопросов нужно было взаимодействовать лишь с одной коллекцией. Вам нужно денормализовать вашу БД. Такой подход наиболее близок для документоориентированных БД. 
 -->
 
-## Заключение
+## Conclusion
 
-В этой задаче нашей целью было написание связей в моделях и использование методов объектов, которые формируют запросы к базе данных. После завершения задания вы должны понимать, как формируются связи, что такое модель и зачем нужен [Foreign Key](https://postgrespro.ru/docs/postgresql/12/tutorial-fk), а также когда именно он нужен, и в каких случаях можно обойтись без него.
+The goal of this assignment was to connect models and use object methods to form queries to the database. In this assignment, you learned about models, connections, and [Foreign Key](https://postgrespro.ru/docs/postgresql/12/tutorial-fk) (and why / when you need to use them).
 
-[model]: https://sequelize.org/master/manual/model-querying-basics.html
-[sequelize cli]: https://sequelize.org/master/manual/migrations.html
+
+[Model]: https://sequelize.org/master/manual/model-querying-basics.html
+[Sequelize cli]: https://sequelize.org/master/manual/migrations.html
 [Associations]: https://sequelize.org/master/manual/assocs.html
 [Model Querying]: https://sequelize.org/master/manual/model-querying-basics.html
-
