@@ -67,7 +67,7 @@ The following pages may be helpful:
 
 ## Conclusion
 
-The goal of this assignment was to connect models and use object methods to form queries to the database. In this assignment, you learned about models, connections, and [Foreign Key](https://postgrespro.ru/docs/postgresql/12/tutorial-fk) (and why / when you need to use them).
+The goal of this assignment was to connect models and use object methods to form queries to the database. In this assignment, you learned about models, connections, and [Foreign Key](https://postgrespro.com/docs/postgresql/12/tutorial-fk) (and why / when you need to use them).
 
 
 [Model]: https://sequelize.org/master/manual/model-querying-basics.html
