@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this assignment, you will learn how to work with model connections. In this classic relational database approach, connections are as valuable as the information itself. You will learn how to connect models, reference other models, and write methods.
+In this assignment, you will learn how to work with model relationships. In this classic relational database approach, relationships are as valuable as the information itself. You will learn how to connect models, reference other models, and write methods.
 
 Before starting your releases, carefully examine these topics in the documentation:
 - [Model]
@@ -14,9 +14,9 @@ Before starting your releases, carefully examine these topics in the documentati
 
 *Figure 1*. Schema design for this assignment
 
-You'll focus on connections, but imagine that you're building a complete application for booking hotel rooms. A room should know its Hotel, and Bookings should know its User and Room. Don't focus on booking dates or other unimportant details, but on correctly connecting the models.
+You'll focus on relationships, but imagine that you're building a complete application for booking hotel rooms. A room should know its Hotel, and Bookings should know its User and Room. Don't focus on booking dates or other unimportant details, but on correctly connecting the models.
 
-After establishing the connections, you should be able to answer the following questions.
+After establishing the relationships, you should be able to answer the following questions.
 
 *For a user...*
 
@@ -52,9 +52,9 @@ The following pages may be helpful:
 - [Sequelize cli]
 
 
-### Release 1: Organize Connections
+### Release 1: Organize Relationships
 
-Next, you need to establish connections by giving models links to other models. To better understand, take a close look at the above image. If you can answer all the questions, that means that you've correctly constructed your connections.
+Next, you need to establish relationships by giving models links to other models. To better understand, take a close look at the above image. If you can answer all the questions, that means that you've correctly constructed your relationships.
 
 The following pages may be helpful:
 - [Associations]
@@ -67,7 +67,7 @@ The following pages may be helpful:
 
 ## Conclusion
 
-The goal of this assignment was to connect models and use object methods to form queries to the database. In this assignment, you learned about models, connections, and [Foreign Key](https://postgrespro.com/docs/postgresql/12/tutorial-fk) (and why / when you need to use them).
+The goal of this assignment was to connect models and use object methods to form queries to the database. In this assignment, you learned about models, relationships, and [Foreign Key](https://postgrespro.com/docs/postgresql/12/tutorial-fk) (and why / when you need to use them).
 
 
 [Model]: https://sequelize.org/master/manual/model-querying-basics.html
