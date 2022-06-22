@@ -1,0 +1,31 @@
+{
+  "name": "sequelize-hotels",
+  "version": "1.0.0",
+  "description": "## Введение В этой задаче вы научитесь работать с моделями отношениями. Это классический подход реляционных БД, в котором связи имеют не меньшую ценность чам сама информация.  Мы будем учиться составлять отношения между моделями, делать ссылки на другие модели и писать методы.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rundomhaze/sequelize-hotels.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rundomhaze/sequelize-hotels/issues"
+  },
+  "homepage": "https://github.com/Rundomhaze/sequelize-hotels#readme",
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "dependencies": {
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.0",
+    "sequelize-cli": "^6.4.1"
+  }
+}
